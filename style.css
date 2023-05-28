@@ -1,0 +1,159 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: sans-serif;
+}
+header{
+    background-color:#41644A;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+}
+.navbar li{
+    display:inline-block;
+    list-style: none;
+    padding: 15px 20px;
+    font-weight: 700;
+}
+.navbar a{
+    text-decoration: none;
+    color:#FFF;
+}
+.navbar a:hover{
+    color:lightgreen;
+    
+}
+
+.logo{
+    margin-left: 10px;
+
+}
+.logo img{
+    height:40px;
+    border-radius:50%
+}
+.toggleBtn{
+    margin-right: 10px;
+    padding: 15px 20px;
+    display: none;
+
+}
+.line{
+    width: 25px;
+    height: 2px;
+    background-color: #FFF;
+    margin-bottom:5px;
+}
+.home{
+    padding: 100px;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background:conic-gradient(#ffffff 0deg 180deg,#EBEFFF 180deg 360deg)
+}
+.home .content span,.content h3{
+    color:#496DFF;
+    font-size: 1.5em;
+    font-weight:600;
+    line-height: 1.2;
+    letter-spacing:5px;
+}
+.home .content{
+    text-align: center;
+}
+.home .content h1{
+    font-size: 6em;
+}
+.about{
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    padding-top:100px;
+}
+.about .box{
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+.box .aboutme{
+    display: flex;
+    flex-direction: column;
+    gap:30px;
+    /* justify-content: center; */
+    align-items: center;
+    width: 375px;
+}
+.box img{
+    height: 375px;
+}
+.aboutlist{
+    list-style: none;
+    line-height:2.5;
+    width: 100%;
+}
+
+ .value{
+    float: right;
+    color:grey;
+    font-weight: 600;
+ }  
+.lable{
+    font-weight:600;
+}
+#cv{
+    text-decoration: none;
+    background-color: #496DFF;
+    padding: 15px;
+    color:#ffffff;
+    font-weight: 600;
+    letter-spacing: 2px;
+    font-size:0.8em;
+    border-radius:25px;
+}
+#cv:hover{
+    background-color: navy;
+}
+.portfolio{
+    height: 100vh;
+    padding: 100px;
+    display: flex;
+    justify-content: center;
+    gap:20px;
+    flex-wrap: wrap;
+}
+.pgallery{
+width: 350px;
+}
+
+@media screen and (max-width:575px) {
+    .navbar{
+        display: none;
+    }
+    .toggleBtn{
+        display: block;
+        cursor: pointer;
+    }
+    
+}
+@media screen and (max-width:753px) {
+    .box img{
+        display: none;
+    }
+    .aboutlist{
+        width: 100%;
+    }
+    
+    
+}
+@media screen and (max-width:380px) {
+    .aboutlist{
+        width: 90%;
+    }
+    
+}
